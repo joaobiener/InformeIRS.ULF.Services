@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\microservices\\UnimeLF\\Microservices\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services.csproj": {}
+  },
+  "projects": {
+    "C:\\microservices\\UnimeLF\\Microservices\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\microservices\\UnimeLF\\Microservices\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services.csproj",
+        "projectName": "InformeIRS.ULF.Services",
+        "projectPath": "C:\\microservices\\UnimeLF\\Microservices\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services.csproj",
+        "packagesPath": "C:\\Users\\jpedrosup\\.nuget\\packages\\",
+        "outputPath": "C:\\microservices\\UnimeLF\\Microservices\\InformeIRS.ULF.Services\\InformeIRS.ULF.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jpedrosup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "c:\\microservices\\projects\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.21.61, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.80, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+#Build Stage
+FROM mcr.microsoft.com/dotnet/sdk:6.0-focal AS build
+WORKDIR /source
+COPY ..
+RUN dotnet restore "./InformeIR.ULF.Services/InformeIR.ULF.Services.csproj" --disable-parallel
+
+#Serve Stage

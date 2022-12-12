@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\InformeIRS.ULF.Services.props" />
+</Project>
