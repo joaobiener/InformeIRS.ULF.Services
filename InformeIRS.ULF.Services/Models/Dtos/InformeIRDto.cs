@@ -19,26 +19,18 @@ namespace InformeIR.ULF.Services.Models.Dtos;
     public string? NomeBeneficiario { get; set; }
 
     public string? TipoDependencia { get; set; }
-    //Outras Dependências
-    //Enteado
-    //Mãe
-    //Titular
-    //Companheiro
-    //Filho
-    //Filho Inválido
-    //Cônjuge
-    //Pai
-    //Agregado
 
-    public DateTime DataNascimentoBenef { get; set; }
+    public DateTime? DataNascimentoBenef { get; set; }
+
+    public DateTime? DataAtendimento { get; set; }
 
     public string? CodigoCartaoBeneficiario { get; set; }
 
     public string? CodigoCartaoTitular { get; set; }
 
-    public DateTime DataContrato { get; set; }
+    public DateTime? DataContrato { get; set; }
 
-    public DateTime DataInclusaoBeneficiario { get; set; }
+    public DateTime? DataInclusaoBeneficiario { get; set; }
     public int TipoRegisto { get; set; } //
                                              //1	TOP
                                              //2	DTOP

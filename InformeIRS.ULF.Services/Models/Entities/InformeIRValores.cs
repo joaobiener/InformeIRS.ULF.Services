@@ -44,7 +44,10 @@ namespace InformeIR.ULF.Services.Models.Entities
 
 
         [Column("DATA_NASCIMENTO_BENEFICIARIO")]
-        public DateTime DataNascimentoBenef { get; set; }
+        public DateTime? DataNascimentoBenef { get; set; }
+
+        [Column("DATA_ATENDIMENTO")]
+        public DateTime? DataAtendimento { get; set; }
 
         [Column("CARTAO_BENEFICIARIO")]
         public string? CodigoCartaoBeneficiario { get; set; }
@@ -53,10 +56,10 @@ namespace InformeIR.ULF.Services.Models.Entities
         public string? CodigoCartaoTitular { get; set; }
 
         [Column("DATA_CONTRATACAO")]
-        public DateTime DataContrato { get; set; }
+        public DateTime? DataContrato { get; set; }
 
         [Column("DATA_INCLUSAO_BENEFICIARIO")]
-        public DateTime DataInclusaoBeneficiario { get; set; }
+        public DateTime? DataInclusaoBeneficiario { get; set; }
 
         [Column("TIPO_REGISTO")]
         public int TipoRegisto { get; set; } //

@@ -26,6 +26,7 @@ namespace InformeIR.ULF.Services.Repository
                           {
                               AnoReferencia = x.AnoReferencia,
                               DocumentoBenefiario = x.DocumentoBenefiario,
+                              NomeBeneficiario = x. NomeBeneficiario,
                               CodigoCartaoBeneficiario = x.CodigoCartaoBeneficiario,
                               DocumentoTitular= x.DocumentoTitular,
                               TipoRegisto = x.TipoRegisto,
@@ -35,9 +36,6 @@ namespace InformeIR.ULF.Services.Repository
                           .Where(x => (x.AnoReferencia == anoReferencia) && (x.DocumentoBenefiario == documentoBenef) && (x.TipoRegisto<3))
                           .ToListAsync();
         }
-
-    
-
 
         public async Task<IEnumerable<InformeIRDto>> GetInformeIRPorAnoCartaoTitular(int anoReferencia, string cartaoTitular)
         {
@@ -70,6 +68,8 @@ namespace InformeIR.ULF.Services.Repository
                     Contrato = x.Contrato,
                     DataContrato = x.DataContrato,
                     DataInclusaoBeneficiario = x.DataInclusaoBeneficiario,
+                    DataNascimentoBenef = x.DataNascimentoBenef,
+                    DataAtendimento = x.DataAtendimento,
                     DocumentoTitular = x.DocumentoTitular,
                     NomeTitular = x.NomeTitular,
                     DocumentoBenefiario = x.DocumentoBenefiario,

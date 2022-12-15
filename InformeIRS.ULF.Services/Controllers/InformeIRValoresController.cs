@@ -20,19 +20,6 @@ namespace InformeIR.ULF.Services.Controllers
 
 
 
-        [HttpGet("BuscaPorAnoCartaoTitular/{anoReferencia}/{cartaoTitular}")]
-        public async Task<IActionResult> GetByAnoCartaoTitular(int anoReferencia, string cartaoTitular)
-        {
-            if (anoReferencia <= 0) return BadRequest("Dados inválidos.");
-
-            var informeValores = await _repository.GetInformeIRPorAnoCartaoTitular(anoReferencia, cartaoTitular);
-
-
-
-            return informeValores != null
-                ? Ok(informeValores)
-                : NotFound("Informação não encontrada");
-        }
 
         [HttpGet("BuscaPorAnoCartoesBenef/{anoReferencia}/{DocumentoBenef}")]
         public async Task<IActionResult> BuscaPorAnoCartoesBenef(int anoReferencia, string DocumentoBenef)
@@ -47,8 +34,42 @@ namespace InformeIR.ULF.Services.Controllers
                 ? Ok(informeValores)
                 : NotFound("Informação não encontrada");
         }
+        [HttpGet("BuscaPorAnoDocumentoCartoesBenef/{anoReferencia}/{DocumentoBenef}/{CartaoBenef}")]
+        public async Task<IActionResult> BuscaPorAnoDocumentoCartoesBenef(int anoReferencia, string DocumentoBenef, string CartaoBenef)
+        {
+            if (anoReferencia <= 0) return BadRequest("Dados inválidos.");
+
+            var informeValores = await _repository.GetInformeCartoesBeneficiarios(anoReferencia, DocumentoBenef);
+
+            if (informeValores != null)
+            {
+                bool temContrato = informeValores.Any(x => x.CodigoCartaoBeneficiario == CartaoBenef );
+                if (!temContrato) return NotFound("Informação não encontrada");
+            }
 
 
+
+            return informeValores != null
+                ? Ok(informeValores)
+                : NotFound("Informação não encontrada");
+        }
+
+
+       
+
+        [HttpGet("BuscaPorAnoCartaoTitular/{anoReferencia}/{cartaoTitular}")]
+        public async Task<IActionResult> GetByAnoCartaoTitular(int anoReferencia, string cartaoTitular)
+        {
+            if (anoReferencia <= 0) return BadRequest("Dados inválidos.");
+
+            var informeValores = await _repository.GetInformeIRPorAnoCartaoTitular(anoReferencia, cartaoTitular);
+
+
+
+            return informeValores != null
+                ? Ok(informeValores)
+                : NotFound("Informação não encontrada");
+        }
         [HttpGet("BuscaPorAnoContratoDocumentoTitular/{anoReferencia}/{Contrato}/{DocumentoTitular}")]
         public async Task<IActionResult> BuscaPorAnoCartoesBenef(int anoReferencia, int Contrato, string DocumentoTitular)
         {
