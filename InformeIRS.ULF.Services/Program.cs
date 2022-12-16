@@ -41,6 +41,14 @@ builder.Services.AddDbContext<InformeIRSContexto>
 
 var app = builder.Build();
 
+app.UsePathBase("/api/InformeIR");
+
+app.Use((context, next) =>
+{
+    context.Request.PathBase = "/api/InformeIR";
+    return next();
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

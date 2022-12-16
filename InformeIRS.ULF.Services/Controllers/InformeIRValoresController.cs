@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace InformeIR.ULF.Services.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class InformeIRValoresController : ControllerBase
     {
         private readonly IInformeIRRepository _repository;

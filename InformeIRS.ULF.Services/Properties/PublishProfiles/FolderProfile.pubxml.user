@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\microservices\UnimeLF\Microservices\InformeIRS.ULF.Services\InformeIRS.ULF.Services\bin\Release\net6.0\publish\</_PublishTargetUrl>
-    <History>True|2022-12-14T12:42:17.7473521Z;True|2022-12-13T16:13:14.5156710-03:00;True|2022-12-13T13:27:59.6355569-03:00;True|2022-12-13T11:37:42.5546256-03:00;True|2022-12-12T16:43:55.2088101-03:00;</History>
+    <History>True|2022-12-16T16:34:03.7881634Z;True|2022-12-16T13:06:43.5579944-03:00;True|2022-12-16T10:17:35.5106705-03:00;True|2022-12-14T09:42:17.7473521-03:00;True|2022-12-13T16:13:14.5156710-03:00;True|2022-12-13T13:27:59.6355569-03:00;True|2022-12-13T11:37:42.5546256-03:00;True|2022-12-12T16:43:55.2088101-03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
