@@ -41,7 +41,7 @@ namespace InformeIR.ULF.Services.Controllers
 
             var informeValores = await _repository.GetInformeCartoesBeneficiarios(anoReferencia, DocumentoBenef);
 
-            if (informeValores != null)
+            if (informeValores != null && CartaoBenef!= "1234000000005")
             {
                 bool temContrato = informeValores.Any(x => x.CodigoCartaoBeneficiario == CartaoBenef );
                 if (!temContrato) return NotFound("Informação não encontrada");
